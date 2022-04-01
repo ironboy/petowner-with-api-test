@@ -4,8 +4,9 @@ name: Run tests
 # because of a push or is about the be changed
 # by a pull request
 on:
-  [push, pull_request]:
+  push:
     branches: [dev, main]
+  pull_request: [dev, main]
 
 jobs:
   
